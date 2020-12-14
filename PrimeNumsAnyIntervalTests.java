@@ -17,7 +17,7 @@ public class PrimeNumsAnyIntervalTests {
 
     @Test
     public void testPrimes() {
-        String expected = "3 5 7 \r\n";
+        String expected = "2 3 5 7 \r\n";
         PrintStream stdout = System.out;
         ByteArrayOutputStream result = new ByteArrayOutputStream();
 
