@@ -21,18 +21,18 @@ public class PrimeNumsAnyInterval {
 
     public static void PrimeNumsOutput (int down, int up)
     {
-        for (int i = down; i < up; i++) {
-            boolean tmp = false;
+        for (int i = down; i <= up; i++) {
+            boolean isPrime = true;
             for (int j = 2; j <= Math.sqrt(i); j++)
             {
                 if (i%j == 0)
                 {
-                    tmp = false;
+                    isPrime = false;
                     break;
                 }
-                else tmp = true;
+                else isPrime = true;
             }
-            if (tmp == true)
+            if (isPrime == true)
                 System.out.println(i);
         }
     }
